@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Amor Amor Impressão de Tags" Language="1033" Version="1.0.0.0" Manufacturer="Zmass Productions" UpgradeCode="fe078878-b7aa-4da0-bdeb-d219b3f37020" Codepage="65001">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+		<Feature Id="ProductFeature" Title="Amor Amor Impressão de Tags" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Amor Amor MI" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="AmorAmorTagsApp" Guid="2d61e333-42e3-4cb1-be0b-977383c3cc53">
+				<File Id="AmorAmorTagsApp" Name="AmorAmorTagsApp.exe" Source="C:\Users\zizom\source\repos\Amor Amor Impressão de Tag\WixBuilder\bin\Debug\AmorAmorTagsApp.msi"> </File>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

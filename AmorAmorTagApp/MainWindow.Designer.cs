@@ -1,5 +1,4 @@
-﻿using Amor_Amor_Impressão_de_Tag.Properties;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -268,7 +267,7 @@ namespace Amor_Amor_Impressão_de_Tag
             this.Controls.Add(this.printButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.productSearchTextBox);
-            this.Icon = global::Amor_Amor_Impressão_de_Tag.Properties.Resources.transparente_4x;
+            //this.Icon = global::Amor_Amor_Impressão_de_Tag.Properties.Resources.transparente_4x;
             this.MinimumSize = new System.Drawing.Size(600, 658);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
